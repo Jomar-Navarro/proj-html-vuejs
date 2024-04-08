@@ -63,9 +63,11 @@
 <style lang="scss">
 @use '/src/assets/scss/main.scss' as *;
 
-  img{
+  .logo{
+    img{
     width: 160px;
     margin-right: 150px;
+  }
   }
 
   .icon{
