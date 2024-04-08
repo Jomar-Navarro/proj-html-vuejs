@@ -14,7 +14,7 @@
           <p>Have questions? <a href="#">Get Free Sample &rightarrow;</a></p>
         </div>
         <div id="other-bg-jumbo" class="col-8 bg-jumbo">
-          <img src="/img/about-me-profile-ohm4dxoearqbxny7q3bq1pzbdgofdx0tobbeqcvzd0.jpg" alt="">
+          <img src="/img/about-me-profile-ohm4dxoearqbxny7q3bq1pzbdgofdx0tobbeqcvzd0.jpg" alt="#">
         </div>
       </div>
     </div>
@@ -30,14 +30,19 @@
     background:
     url('/img/maxcoach-shape-02.png') right,
     url('/img/maxcoach-shape-07.png') right bottom,
+    url('/img/maxcoach-shape-08.png'),
     url('/img/maxcoach-shape-08.png');
-    background-repeat: no-repeat;
-    background-position: right, 68% 99%, left;
+    background-repeat: no-repeat, no-repeat,;
+    background-position: right, 68% 99%, 10% 40%, 10% 73%;
   }
   img{
     width: max-content;
     border-radius: 50%;
     margin: 0 auto;
   }
+}
+
+#dot{
+  position: absolute;
 }
 </style>
