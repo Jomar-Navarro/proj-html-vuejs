@@ -24,17 +24,24 @@
 
 main{
   background-image: url('/img/maxcoach-shape-02.png');
-  background-position-x: right;
-  background-position-y: center;
+  background-position-x: calc(80%);
+  background-position-y: calc(60%);
   background-repeat: no-repeat;
   .container{
-  height: 400px;
+  height: 500px;
   padding: 0px 200px;
     .newsletter{
       height: 100%;
       padding: 150px;
       h2{
         padding-bottom: 20px ;
+        strong{
+          color: $title-color;
+        }
+
+        span{
+          color: $text-green;
+        }
       }
 
       h5{
