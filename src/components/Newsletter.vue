@@ -5,8 +5,8 @@
 </script>
 
   <template>
-    <main>
-      <div class="container text-center my-5">
+    <div id="news">
+      <div class="container text-center">
         <div class="newsletter justify-content-center flex-column d-flex">
           <h2><strong>Subscribe</strong> <span>Newsletter</span></h2>
           <h5>Enter your email address to register to our newsletter subscription delivered on a regular basis!</h5>
@@ -16,23 +16,23 @@
           </form>
         </div>
       </div>
-    </main>
+    </div>
   </template>
 
 <style lang="scss" scoped>
 @use '/src/assets/scss/main.scss' as *;
 
-main{
+#news{
   background-image: url('/img/maxcoach-shape-02.png');
   background-position-x: calc(80%);
   background-position-y: calc(60%);
   background-repeat: no-repeat;
   .container{
-  height: 500px;
+  height: 100%;
   padding: 0px 200px;
     .newsletter{
       height: 100%;
-      padding: 150px;
+      margin: 140px;
       h2{
         padding-bottom: 20px ;
         strong{
