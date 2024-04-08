@@ -1,6 +1,48 @@
 import { reactive } from 'vue';
 
 export const store = reactive({
-  mainTitle: 'MaxCoach'
-  
+  mainTitle: 'MaxCoach',
+  cardContent: [
+          {
+            cardImage: '',
+            price: '',
+            program: '',
+            class: '',
+          },
+
+          {
+            cardImage: '',
+            price: '',
+            program: '',
+            class: '',
+          },
+
+          {
+            cardImage: '',
+            price: '',
+            program: '',
+            class: '',
+          },
+
+          {
+            cardImage: '',
+            price: '',
+            program: '',
+            class: '',
+          },
+
+          {
+            cardImage: '',
+            price: '',
+            program: '',
+            class: '',
+          },
+
+          {
+            cardImage: '',
+            price: '',
+            program: '',
+            class: '',
+          },
+        ]
 })
