@@ -43,7 +43,7 @@
             :key="item"
             :droptitle="titles[item - 1]" />
           <!-- DropDown -->
-          <div class="">
+          <div class="icon">
             <i class="fa-regular fa-circle-user"></i>
           </div>
           <!-- SearchBar -->
@@ -66,6 +66,12 @@
   img{
     width: 160px;
     margin-right: 150px;
+  }
+
+  .icon{
+    i{
+      font-size: large;
+    }
   }
 
   form{
