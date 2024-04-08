@@ -106,7 +106,7 @@
     img:nth-child(6)
     {
       margin-top: 25px;
-      width: 150px;
+      width: 130px;
       height: 40px;
     }
   }
