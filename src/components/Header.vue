@@ -18,8 +18,8 @@
 
 
 <template>
-  <div class="container my-3">
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+  <div class="container my-3 p-0">
+    <nav class="navbar navbar-expand-lg">
       <div class="container-fluid">
         <div class="logo">
           <a class="navbar-brand" href="#">
