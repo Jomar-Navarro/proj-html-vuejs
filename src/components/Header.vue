@@ -5,6 +5,8 @@
     data(){
       return{
         store,
+        titles: ['Home', 'Pages', 'Courses', 'Features', 'Blog', 'Shop']
+
       }
     },
 
@@ -16,7 +18,7 @@
 
 
 <template>
-  <div class="container">
+  <div class="container my-3">
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
       <div class="container-fluid">
         <div class="logo">
@@ -34,15 +36,20 @@
             <span class="navbar-toggler-icon"></span>
           </button>
         </div>
-        <div class="collapse navbar-collapse" id="navbarScroll">
+        <div class="collapse navbar-collapse justify-content-end justify-content-between" id="navbarScroll">
           <!-- DropDown -->
-          <dropdown v-for="item in 6" :key="item" />
+          <dropdown
+            v-for="item in titles.length"
+            :key="item"
+            :droptitle="titles[item - 1]" />
           <!-- DropDown -->
-
+          <div class="">
+            <i class="fa-regular fa-circle-user"></i>
+          </div>
           <!-- SearchBar -->
-          <form class="d-flex" role="search">
-            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-            <button class="btn btn-outline-success" type="submit">Search</button>
+          <form class="d-flex align-items-center" role="search">
+            <input class="form-control border-0" type="search" placeholder="Search" aria-label="Search">
+            <button class="border-0"><i class="fa-solid fa-magnifying-glass"></i></button>
           </form>
           <!-- SearchBar -->
 
@@ -53,9 +60,23 @@
 </template>
 
 
-<style lang="scss" scoped>
+<style lang="scss">
+@use '/src/assets/scss/main.scss' as *;
+
   img{
     width: 160px;
     margin-right: 150px;
+  }
+
+  form{
+    button{
+      position: absolute;
+      right: 0;
+      margin-right: 20px;
+      color: $text-green;
+      i{
+        font-size: large;
+      }
+    }
   }
 </style>

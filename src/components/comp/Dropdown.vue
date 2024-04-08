@@ -1,14 +1,21 @@
 <script>
   export default {
-    
+    props:{
+      droptitle: String,
+    },
+
+    data(){
+      return{
+      }
+    }
   }
 </script>
 
   <template>
-      <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+      <ul class="navbar-nav my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            Link
+            {{ droptitle }}
           </a>
           <ul class="dropdown-menu">
             <li><a class="dropdown-item" href="#">Action</a></li>
@@ -21,5 +28,9 @@
   </template>
 
 <style lang="scss" scoped>
-
+  li{
+    a{
+      color: black;
+    }
+  }
 </style>
