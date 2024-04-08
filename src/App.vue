@@ -1,7 +1,7 @@
 <script>
   import Header from './components/Header.vue';
   import Jumbo from './components/jumbo.vue'
-  import Main from './components/Main.vue';
+  import Main from './components/Card.vue';
   import Footer from './components/Footer.vue';
   import Newsletter from './components/Newsletter.vue';
   export default {
