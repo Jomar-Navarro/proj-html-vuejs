@@ -25,9 +25,13 @@ import { store } from '../data/store';
           </div>
           <div class="col-md-8">
             <div class="card-body text-start ps-4">
-              <h4 class="card-title">{{ item.price }}</h4>
-              <h4 class="card-text">Learning to Write as a Professional Author</h4>
-              <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+              <h4 v-if="item.price" class="card-title">{{ item.price }}<span class="digit">.00</span></h4>
+              <h4 class="free" v-else>Free</h4>
+              <h5 class="card-text">{{ item.program }}</h5>
+              <div class="classes d-flex">
+                <p class="card-text pe-5"><small class="text-body-secondary"><i class="fa-regular fa-file-lines"></i> <span>{{ item.lessons }} Lessons</span></small></p>
+                <p class="card-text"><small class="text-body-secondary"><i class="fa-regular fa-user"></i> <span>{{ item.students }} Students</span></small></p>
+              </div>
             </div>
           </div>
         </div>
@@ -40,11 +44,44 @@ import { store } from '../data/store';
 
 
 <style lang="scss" scoped>
+@use '/src/assets/scss/main.scss' as *;
+
+
 .square{
   width: 180px;
   height: 180px;
   img{
     object-fit: cover;
+  }
+}
+
+.free{
+  color: $text-green;
+  font-weight: 800;
+}
+
+
+.card-title{
+  color: $text-green;
+  font-weight: 800;
+  .digit{
+    font-size: 1.2rem;
+  }
+
+}
+
+.card-text{
+  color: $title-color;
+}
+
+.classes{
+  p{
+    color: $text-body-secondary;
+    opacity: .8;
+    font-weight: 500;
+    i{
+      padding-right: 5px;
+    }
   }
 }
 </style>
