@@ -49,5 +49,7 @@ export const store = reactive({
             lessons: '14',
             students: '76',
           },
-        ]
+        ],
+
+  titles: ['Home', 'Pages', 'Courses', 'Features', 'Blog', 'Shop']
 })

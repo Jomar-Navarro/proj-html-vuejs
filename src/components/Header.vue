@@ -5,9 +5,11 @@
     data(){
       return{
         store,
-        titles: ['Home', 'Pages', 'Courses', 'Features', 'Blog', 'Shop']
-
       }
+    },
+
+    props:{
+      titles: Array,
     },
 
     components:{
@@ -39,9 +41,9 @@
         <div class="collapse navbar-collapse justify-content-end justify-content-between" id="navbarScroll">
           <!-- DropDown -->
           <dropdown
-            v-for="item in titles.length"
-            :key="item"
-            :droptitle="titles[item - 1]" />
+            v-for="(title,index) in store.titles"
+            :key="index"
+            :droptitle="title" />
           <!-- DropDown -->
           <div class="icon">
             <i class="fa-regular fa-circle-user"></i>
