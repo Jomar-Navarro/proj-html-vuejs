@@ -17,7 +17,7 @@ import { store } from '../data/store';
     <h6 class="sub-title text-uppercase">Stimulated to learn?</h6>
     <h2 class="title">Featured Online Courses</h2>
 
-    <div class="d-flex flex-wrap justify-content-center">
+    <div class="d-flex flex-wrap justify-content-center ms-5">
       <div v-for="(item,index) in store.cardContent" :key="index" class="card mt-5 border-0" style="max-width: 540px;">
         <div class="row g-0">
           <div class="col-md-4 square d-flex">
