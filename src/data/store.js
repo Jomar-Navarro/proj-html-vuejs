@@ -51,5 +51,31 @@ export const store = reactive({
           },
         ],
 
-  titles: ['Home', 'Pages', 'Courses', 'Features', 'Blog', 'Shop']
+  titles: ['Home', 'Pages', 'Courses', 'Features', 'Blog', 'Shop'],
+
+  worldwide: [
+    {
+      title: 'Successfully trained',
+      num: '1790',
+      subTitle: 'Enrolled Learners'
+    },
+
+    {
+      title: 'Proudly Received',
+      num: '19',
+      subTitle: 'Enrolled Learners'
+    },
+
+    {
+      title: 'Firmly Established',
+      num: '24',
+      subTitle: 'Enrolled Learners'
+    },
+
+    {
+      title: 'Getting Featured on',
+      num: '1090',
+      subTitle: 'Enrolled Learners'
+    },
+  ]
 })

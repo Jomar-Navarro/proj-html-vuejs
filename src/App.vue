@@ -4,6 +4,7 @@
   import Card from './components/Card.vue';
   import Smart from './components/Smart.vue'
   import VideoYT from './components/VideoYT.vue';
+  import Influence from './components/Influence.vue';
   import Blog from  './components/Blog.vue';
   import Newsletter from './components/Newsletter.vue';
   import Footer from './components/Footer.vue';
@@ -15,6 +16,7 @@
       Card,
       Smart,
       VideoYT,
+      Influence,
       Blog,
       Newsletter,
       Footer,
@@ -30,6 +32,7 @@
     <Card />
     <Smart />
     <VideoYT />
+    <Influence />
     <Blog />
     <Newsletter />
     <Footer />

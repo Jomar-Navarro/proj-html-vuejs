@@ -58,7 +58,7 @@
 @use '/src/assets/scss/main.scss' as *;
 
 .blog-wrapper{
-  margin: 200px 0;
+  margin: 150px;
 }
 
 .sub-title{
