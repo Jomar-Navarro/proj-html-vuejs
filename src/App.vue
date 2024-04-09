@@ -2,6 +2,7 @@
   import Header from './components/Header.vue';
   import Jumbo from './components/jumbo.vue'
   import Card from './components/Card.vue';
+  import Smart from './components/Smart.vue'
   import Footer from './components/Footer.vue';
   import Newsletter from './components/Newsletter.vue';
   
@@ -10,6 +11,7 @@
       Header,
       Jumbo,
       Card,
+      Smart,
       Newsletter,
       Footer,
 
@@ -22,6 +24,7 @@
     <Header />
     <Jumbo />
     <Card />
+    <Smart />
     <Newsletter />
     <Footer />
   </div>
