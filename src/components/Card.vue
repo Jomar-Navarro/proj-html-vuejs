@@ -14,8 +14,8 @@ import { store } from '../data/store';
 
 <template>
   <div class="container text-center">
-    <h6 class="text-uppercase">Stimulated to learn?</h6>
-    <h1>Featured Online Courses</h1>
+    <h6 class="sub-title text-uppercase">Stimulated to learn?</h6>
+    <h2 class="title">Featured Online Courses</h2>
 
     <div class="d-flex flex-wrap justify-content-center">
       <div v-for="(item,index) in store.cardContent" :key="index" class="card mt-5 border-0" style="max-width: 540px;">
@@ -38,6 +38,9 @@ import { store } from '../data/store';
       </div>
     </div>
 
+    <div class="mt-5">
+      <button class="btn"><strong>View all courses <i class="fa-solid fa-arrow-right-long"></i></strong></button>
+    </div>
     
   </div>
 </template>
@@ -46,6 +49,16 @@ import { store } from '../data/store';
 <style lang="scss" scoped>
 @use '/src/assets/scss/main.scss' as *;
 
+
+
+.sub-title{
+  color: $jumbotext;
+}
+
+.title{
+  color: $title-color;
+  font-weight: 700;
+}
 
 .square{
   width: 180px;
@@ -76,12 +89,19 @@ import { store } from '../data/store';
 
 .classes{
   p{
-    color: $text-body-secondary;
+    color: $jumbotext;
     opacity: .8;
     font-weight: 500;
     i{
       padding-right: 5px;
     }
   }
+}
+
+.btn{
+  background-color: $text-green;
+  color: white;
+  padding: 15px 55px;
+  text-align: center;
 }
 </style>
