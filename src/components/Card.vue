@@ -7,6 +7,14 @@ import { store } from '../data/store';
       }
     },
 
+    props:{
+      cardImage: String,
+      program: String,
+      price: String,
+      lessons: String,
+      students: String,
+    }
+
     
   }
 </script>

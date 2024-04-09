@@ -5,6 +5,7 @@
   import Smart from './components/Smart.vue'
   import Footer from './components/Footer.vue';
   import Newsletter from './components/Newsletter.vue';
+  import Video from './components/Video.vue';
   
   export default {
     components:{
@@ -12,6 +13,7 @@
       Jumbo,
       Card,
       Smart,
+      Video,
       Newsletter,
       Footer,
 
@@ -25,6 +27,7 @@
     <Jumbo />
     <Card />
     <Smart />
+    <Video />
     <Newsletter />
     <Footer />
   </div>
