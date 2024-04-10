@@ -16,7 +16,7 @@
           <div class="col-5 text-start">
             <h1>Distant learning for further expansion</h1>
             <p>Learning is a life-long journey that in fact we never find the terminate stop. Stop searching, enjoy the process</p>
-            <button><i class="fa-solid fa-download"></i> <span><strong>Download free guide</strong></span></button>
+            <button class="btn"><i class="fa-solid fa-download"></i> <span><strong>Download free guide</strong></span></button>
             <p class="link">Have questions? <a href="#">Get Free Sample <i class="fa-solid fa-arrow-right-long"></i></a></p>
           </div>
 
@@ -78,6 +78,10 @@
     border: none;
     border-radius: 5px;
     margin: 20px 0px;
+    &:hover{
+      background-color: $title-color;
+      transform: scale(1.1);
+    }
   }
 
   .link{

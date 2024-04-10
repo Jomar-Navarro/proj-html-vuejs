@@ -81,6 +81,11 @@ import { store } from '../data/store';
   font-weight: 800;
 }
 
+.card{
+  &:hover{
+    transform: scale(1.1);
+  }
+}
 
 .card-title{
   color: $text-green;
@@ -93,6 +98,11 @@ import { store } from '../data/store';
 
 .card-text{
   color: $title-color;
+
+  &:hover{
+    color: $text-green;
+    cursor: pointer;
+  }
 }
 
 .classes{
