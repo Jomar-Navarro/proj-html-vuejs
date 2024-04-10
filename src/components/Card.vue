@@ -121,5 +121,10 @@ import { store } from '../data/store';
   color: white;
   padding: 15px 55px;
   text-align: center;
+  &:hover{
+    background-color: $title-color;
+    color: white;
+    transform: scale(1.1);
+  }
 }
 </style>
