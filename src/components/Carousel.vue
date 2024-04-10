@@ -70,7 +70,7 @@
       </swiper>
     </div>
 
-    <div class="certification my-5">
+    <div class="certification">
         <h4>Start today for getting <span>Online Certification</span></h4>
         <h2>You can be your own guiding star with out help!</h2>
         <div class="mt-5"><button class="btn ">Get started now</button></div>
@@ -83,16 +83,18 @@
 @use '/src/assets/scss/main.scss' as *;
 
 .carousel{
+  padding: 20px 0;
+  background-color: $bg-gray;
   background-image: 
   url('/img/maxcoach-shape-02.png'),
   url('/img/maxcoach-shape-01.png'),
   ;
   background-repeat: no-repeat;
-  background-position: 80% 100%, 20% 90%;
+  background-position: 80% 95%, 20% 87%;
   position: relative;
 }
 .main-title{
-  margin: 150px 0 80px 0;
+  margin: 50px 0 80px 0;
   .sub-title{
     color: $jumbotext;
     font-size: 1rem;

@@ -34,8 +34,8 @@
 
 #world{
   .row{
-    margin-top: 125px;
-    margin-bottom: 125px;
+    // margin-top: 125px;
+    // margin-bottom: 125px;
   }
 
   .card{
