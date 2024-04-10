@@ -58,7 +58,8 @@
 @use '/src/assets/scss/main.scss' as *;
 
 .blog-wrapper{
-  margin: 150px;
+  padding: 150px 0;
+  background-color: $bg-blog;
 }
 
 .sub-title{

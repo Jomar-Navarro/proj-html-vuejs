@@ -6,6 +6,8 @@
 
 
 <template>
+  <div class="bg-footer">
+
   <div class="container">
     <div class="row">
       <div class="col-6">
@@ -49,11 +51,19 @@
   <div class="text-center my-5 opacity-50">
     <p><i class="fa-regular fa-copyright"></i> 2020 Maxcoach. All Rights Reserved</p>
   </div>
+
+  </div>
+
 </template>
 
 
 <style lang="scss" scoped>
 @use '/src/assets/scss/main.scss' as *;
+
+.bg-footer{
+  background-color: $bg-gray;
+  padding: 60px 0;
+}
 
 p{
   color: $text-footer;

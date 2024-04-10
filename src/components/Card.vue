@@ -21,6 +21,8 @@ import { store } from '../data/store';
 
 
 <template>
+  <div class="back">
+
   <div class="container text-center">
     <h6 class="sub-title text-uppercase">Stimulated to learn?</h6>
     <h2 class="title">Featured Online Courses</h2>
@@ -51,13 +53,19 @@ import { store } from '../data/store';
     </div>
     
   </div>
+
+  </div>
+
 </template>
 
 
 <style lang="scss" scoped>
 @use '/src/assets/scss/main.scss' as *;
 
-
+.back{
+  background-color: $bg-gray;
+  padding: 50px 0;
+}
 
 .sub-title{
   color: $jumbotext;
@@ -82,6 +90,7 @@ import { store } from '../data/store';
 }
 
 .card{
+  background-color: $bg-gray;
   &:hover{
     transform: scale(1.1);
   }

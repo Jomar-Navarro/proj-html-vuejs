@@ -23,9 +23,10 @@
 @use '/src/assets/scss/main.scss' as *;
 
 #news{
-  background-image: url('/img/maxcoach-shape-02.png');
-  background-position-x: calc(80%);
-  background-position-y: calc(60%);
+  background-image:
+  url('/img/maxcoach-shape-02.png'),
+  url('/img/maxcoach-shape-09.png');
+  background-position: 80% 60%, 79% 26%;
   background-repeat: no-repeat;
   .container{
   height: 100%;
