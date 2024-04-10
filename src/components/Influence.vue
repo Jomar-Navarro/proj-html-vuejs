@@ -33,10 +33,6 @@
 @use '/src/assets/scss/main.scss' as *;
 
 #world{
-  .row{
-    // margin-top: 125px;
-    // margin-bottom: 125px;
-  }
 
   .card{
     padding: 50px 0;

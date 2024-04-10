@@ -49,7 +49,7 @@
         class="mySwiper"
       >
         <swiper-slide v-for="item in store.carouselEl" :key="item">
-          <div class="inner-slider mt-1 d-flex flex-column align-items-start">
+          <div class="inner-slider mt-1 d-flex flex-column align-items-start bg-white py-5 rounded-3">
             <p class="title text-start">{{ item.title }}</p>
             <p class="text text-start">{{ item.text }}</p>
             <div class="card mt-3 border-0 d-flex justify-content-start" style="max-width: 540px;">
