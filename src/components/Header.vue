@@ -9,7 +9,7 @@
     },
 
     props:{
-      titles: Array,
+      dropDownMenu: Array,
     },
 
     components:{
