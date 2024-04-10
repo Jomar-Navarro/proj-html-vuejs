@@ -71,9 +71,9 @@
     </div>
 
     <div class="certification my-5">
-      <h3>Start today for getting Online Certification</h3>
-      <h2>You can be your own guiding star with out help!</h2>
-      <div><button>Get started now</button></div>
+        <h4>Start today for getting <span>Online Certification</span></h4>
+        <h2>You can be your own guiding star with out help!</h2>
+        <div class="mt-5"><button class="btn ">Get started now</button></div>
     </div>
 
   </div>
@@ -82,6 +82,15 @@
 <style lang="scss" scoped>
 @use '/src/assets/scss/main.scss' as *;
 
+.carousel{
+  background-image: 
+  url('/img/maxcoach-shape-02.png'),
+  url('/img/maxcoach-shape-01.png'),
+  ;
+  background-repeat: no-repeat;
+  background-position: 80% 100%, 20% 90%;
+  position: relative;
+}
 .main-title{
   margin: 150px 0 80px 0;
   .sub-title{
@@ -137,6 +146,47 @@
   .card-title{
     color: $title-color;
     font-weight: 700;
+  }
+}
+
+
+.certification{
+  position: relative;
+  height: 22vh;
+  h4{
+    color: $title-color;
+    font-weight: 700;
+  }
+
+  span{
+    color: $text-green;
+    font-weight: 400;
+    font-size: 1.7rem;
+  }
+
+  h2{
+    color: $title-color;
+    font-weight: 700;
+  }
+
+  .btn{
+    background-color: $text-green;
+    color: white;
+    padding: 15px 60px;
+    text-align: center;
+    font-weight: 700;
+    font-size: 0.9rem;
+  }
+
+  .circle{
+    position: absolute;
+    z-index: 99;
+    top: 120px;
+    left: 80px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 6px solid rgba(47, 173, 150, 0.5);
   }
 }
 
