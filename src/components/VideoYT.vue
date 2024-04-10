@@ -45,7 +45,7 @@
     img:last-child{
       position: absolute;
       left: 28%;
-      top: 310%;
+      top: 324%;
       transform: translate(100%);
     }
   }
