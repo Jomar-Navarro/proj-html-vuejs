@@ -3,3 +3,21 @@
 body{
   font-family: $primary-font;
   }
+
+.swiper-pagination-bullet-active{
+  background: $title-color !important;
+  width: 12px;
+  height: 12px;
+}
+
+.swiper-pagination-bullet{
+  margin: 0px 10px !important;
+}
+
+.swiper-slide-prev {
+  opacity: .5 !important;
+}
+
+.swiper-slide-next {
+  opacity: .3 !important;
+}

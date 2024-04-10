@@ -48,27 +48,34 @@
         :modules="modules"
         class="mySwiper"
       >
-    <swiper-slide v-for="item in store.carouselEl" :key="item">
-      <div class="inner-slider mt-1 d-flex flex-column align-items-start">
-        <p class="title text-start">{{ item.title }}</p>
-        <p class="text text-start">{{ item.text }}</p>
-        <div class="card mt-3 border-0 d-flex justify-content-start" style="max-width: 540px;">
-          <div class="card-wrapper row g-0">
-            <div class="col-md-4 square">
-              <img :src="item.cardImg" class="rounded-circle" alt="...">
-            </div>
-            <div class="col-md-8">
-              <div class="card-body text-start d-flex flex-column">
-                <h6 class="card-title text-uppercase">{{ item.name }}</h6>
-                <p class="card-text"><small class="text-body-secondary">{{ item.position }}</small></p>
+        <swiper-slide v-for="item in store.carouselEl" :key="item">
+          <div class="inner-slider mt-1 d-flex flex-column align-items-start">
+            <p class="title text-start">{{ item.title }}</p>
+            <p class="text text-start">{{ item.text }}</p>
+            <div class="card mt-3 border-0 d-flex justify-content-start" style="max-width: 540px;">
+              <div class="card-wrapper row g-0">
+                <div class="col-md-4 square">
+                  <img :src="item.cardImg" class="rounded-circle" alt="...">
+                </div>
+                <div class="col-md-8">
+                  <div class="card-body text-start d-flex flex-column">
+                    <h6 class="card-title text-uppercase">{{ item.name }}</h6>
+                    <p class="card-text"><small class="text-body-secondary">{{ item.position }}</small></p>
+                  </div>
+                </div>
               </div>
             </div>
-          </div>
-        </div>
-      </div>  
-    </swiper-slide>
-  </swiper>
+          </div>  
+        </swiper-slide>
+      </swiper>
     </div>
+
+    <div class="certification my-5">
+      <h3>Start today for getting Online Certification</h3>
+      <h2>You can be your own guiding star with out help!</h2>
+      <div><button>Get started now</button></div>
+    </div>
+
   </div>
 </template>
 
