@@ -75,6 +75,9 @@
   .icon{
     i{
       font-size: large;
+      &:hover{
+        color: $text-green;
+      }
     }
   }
 

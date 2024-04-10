@@ -91,8 +91,10 @@
       font-weight: 800;
       text-decoration: none;
       font-size: 0.8rem;
+      &:hover{
+        color: $text-green;
+      }
     }
   }
 }
-
 </style>

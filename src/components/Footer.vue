@@ -23,12 +23,12 @@
       <div class="col-3">
         <h5>Explore</h5>
         <div class="row">
-          <div class="col-6">
+          <div class="col-6 text">
             <p>Start here</p>
             <p>Blog</p>
             <p>About us</p>
           </div>
-          <div class="col-6">
+          <div class="col-6 text">
             <p>Success story</p>
             <p>Courses</p>
             <p>Contact us</p>
@@ -36,7 +36,7 @@
 
         </div>
       </div>
-      <div class="col-2">
+      <div class="col-2 text">
         <h5>Information</h5>
         <p>Membership</p>
         <p>Purchase guide</p>
@@ -60,6 +60,11 @@ p{
   font-size: 0.9rem;
   line-height: 1rem;
   font-weight: 600;
+
+    &:hover{
+    color: $text-green;
+    cursor: pointer;
+    }
 }
 
 .icons{
@@ -68,6 +73,11 @@ p{
     margin: 15px 30px 0px 0px;
     color: $text-footer;
     opacity: .6;
+
+    &:hover{
+      color: $text-green;
+      cursor: pointer;
+    }
   }
 }
 </style>

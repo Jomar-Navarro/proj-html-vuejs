@@ -13,11 +13,11 @@
         <p class="sub-title text-uppercase">Enjoyable insights</p>
         <h2 class="title">Most Viewed <span>Best Blogs</span></h2>
         <div class="options">
-          <div class="d-flex"><span class="pe-3 arrow"><i class="fa-solid fa-arrow-right-long"></i></span><p>Become a Better Blogger: Content Planning</p></div>
-          <div class="d-flex"><span class="pe-3 arrow"><i class="fa-solid fa-arrow-right-long"></i></span><p>Promoting Your Online Business on Pinterest</p></div>
-          <div class="d-flex"><span class="pe-3 arrow"><i class="fa-solid fa-arrow-right-long"></i></span><p>Gamification and Game-Based Learning</p></div>
-          <div class="d-flex"><span class="pe-3 arrow"><i class="fa-solid fa-arrow-right-long"></i></span><p>Designing an Online Course from Expert's Perspective</p></div>
-          <div class="d-flex"><span class="pe-3 arrow"><i class="fa-solid fa-arrow-right-long"></i></span><p>Why Online Courses Are the Future of Education</p></div>
+          <div class="text d-flex"><span class="pe-3 arrow"><i class="fa-solid fa-arrow-right-long"></i></span><p>Become a Better Blogger: Content Planning</p></div>
+          <div class="text d-flex"><span class="pe-3 arrow"><i class="fa-solid fa-arrow-right-long"></i></span><p>Promoting Your Online Business on Pinterest</p></div>
+          <div class="text d-flex"><span class="pe-3 arrow"><i class="fa-solid fa-arrow-right-long"></i></span><p>Gamification and Game-Based Learning</p></div>
+          <div class="text d-flex"><span class="pe-3 arrow"><i class="fa-solid fa-arrow-right-long"></i></span><p>Designing an Online Course from Expert's Perspective</p></div>
+          <div class="text d-flex"><span class="pe-3 arrow"><i class="fa-solid fa-arrow-right-long"></i></span><p>Why Online Courses Are the Future of Education</p></div>
         </div>
       </div>
 
@@ -104,6 +104,24 @@
     font-size: 0.9rem;
     color: $jumbotext;
     font-weight: 500;
+  }
+}
+
+.text{
+  &:hover{
+    color: $text-green;
+  }
+}
+
+.card{
+  &:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+  }
+  .card-title{
+    &:hover{
+      color: $text-green;
+    }
   }
 }
 </style>
