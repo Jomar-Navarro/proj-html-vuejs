@@ -41,9 +41,9 @@
         <div class="collapse navbar-collapse justify-content-end justify-content-between" id="navbarScroll">
           <!-- DropDown -->
           <dropdown
-            v-for="(title,index) in store.titles"
+            v-for="(menuTitle,index) in store.dropDownMenu"
             :key="index"
-            :droptitle="title" />
+            :droptitle="menuTitle.title" />
           <!-- DropDown -->
           <div class="icon">
             <i class="fa-regular fa-circle-user"></i>

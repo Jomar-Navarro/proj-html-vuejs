@@ -1,4 +1,5 @@
 <script>
+  import { store } from '../../data/store';
   export default {
     props:{
       droptitle: String,
@@ -6,6 +7,7 @@
 
     data(){
       return{
+        store,
       }
     }
   }
@@ -18,10 +20,7 @@
             {{ droptitle }}
           </a>
           <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="#">Action</a></li>
-            <li><a class="dropdown-item" href="#">Another action</a></li>
-            <li><hr class="dropdown-divider"></li>
-            <li><a class="dropdown-item" href="#">Something else here</a></li>
+            <li v-for="(item, index) in store.dropDownMenu" :key="index"><a v-for="(el, ind) in item.menu" :key="ind" class="dropdown-item" href="#">{{ el }}</a></li>
           </ul>
         </li>
       </ul>

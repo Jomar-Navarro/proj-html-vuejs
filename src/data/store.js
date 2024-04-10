@@ -51,7 +51,78 @@ export const store = reactive({
           },
         ],
 
-  titles: ['Home', 'Pages', 'Courses', 'Features', 'Blog', 'Shop'],
+dropDownMenu: [
+  {
+    title: 'Home',
+    menu: [
+      'Maxcoach Education',
+      'Course Portal',
+      'Distance Learning',
+      'Multimedia Pedagogy',
+      'Modern Schooling',
+      'Remote Training',
+      'Health Coaching',
+      'Gym Coaching',
+      'Business',
+      'Artist'
+    ]
+  },
+  {
+    title: 'Pages',
+    menu: [
+      'Start here',
+      'Success Story',
+      'About Me',
+      'About Us 01',
+      'About Us 02',
+      'About Us 03',
+      'Contact Me',
+      'Contact Us',
+      'Purchase Guide',
+      'Privacy Policy',
+      'Terms of Service'
+    ]
+  },
+  {
+    title: 'Courses',
+    menu: [
+      'Course Grid 01',
+      'Course Grid 02',
+      'Course Grid 03',
+      'Membership Level',
+      'Become a Teacher',
+      'Profile',
+      'Checkout',
+      'Single Layout'
+    ]
+  },
+  {
+    title: 'Features',
+    menu: [
+      'Events',
+      'Zoom Meetings'
+    ]
+  },
+  {
+    title: 'Blog',
+    menu: [
+      'Blog Grid',
+      'Blog Masonry',
+      'Blog Classic',
+      'Blog List'
+    ]
+  },
+  {
+    title: 'Shop',
+    menu: [
+      'Shop Left Sidebar',
+      'Shop Right Sidebar',
+      'Cart',
+      'Wishlist',
+      'Single Product'
+    ]
+  }
+],
 
   worldwide: [
     {
