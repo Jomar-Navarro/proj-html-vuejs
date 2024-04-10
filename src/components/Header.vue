@@ -20,7 +20,8 @@
 
 
 <template>
-  <div class="container my-3 p-0">
+  <div class="shadow">
+    <div class="container py-3 p-0">
     <nav class="navbar navbar-expand-lg">
       <div class="container-fluid">
         <div class="logo">
@@ -58,7 +59,9 @@
         </div>
       </div>
     </nav>
+    </div>
   </div>
+
 </template>
 
 
