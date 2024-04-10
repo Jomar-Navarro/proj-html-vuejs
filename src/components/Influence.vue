@@ -18,7 +18,7 @@
 <template>
   <div id="world" class="container my-5">
     <div class="row d-flex justify-content-center">
-      <div v-for="(item,index) in store.worldwide" :key="index" class="card border-0" style="width: 18rem;">
+      <div v-for="(item,index) in store.worldwide" :key="index" class="card border-bottom-0 border-top-0" style="width: 18rem;">
         <div class="card-body text-center">
           <h5 class="card-title">{{ item.title }}</h5>
           <p class="card-text number">{{ item.num }}</p>
@@ -36,6 +36,10 @@
   .row{
     margin-top: 125px;
     margin-bottom: 125px;
+  }
+
+  .card{
+    padding: 50px 0;
   }
 
   .card-title{
