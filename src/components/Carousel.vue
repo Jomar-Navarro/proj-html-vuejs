@@ -176,6 +176,11 @@
     text-align: center;
     font-weight: 700;
     font-size: 0.9rem;
+    &:hover{
+      background-color: $title-color;
+      color: white;
+      transform: scale(1.1);
+    }
   }
 
   .circle{
