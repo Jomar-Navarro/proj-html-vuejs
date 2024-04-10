@@ -79,10 +79,14 @@
   margin: 150px 0 80px 0;
   .sub-title{
     color: $jumbotext;
+    font-size: 1rem;
+    opacity: .8;
   }
   
   .title{
     color: $title-color;
+    font-weight: 700;
+    font-size: 2.1rem;
     span{
       color: $text-green;
       font-weight: 400;
@@ -128,4 +132,5 @@
     font-weight: 700;
   }
 }
+
 </style>
