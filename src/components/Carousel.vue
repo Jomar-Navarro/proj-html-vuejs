@@ -1,11 +1,10 @@
 
 <script>
+  import { store } from '../data/store';
   import { Swiper, SwiperSlide } from 'swiper/vue';
   import { Pagination } from 'swiper/modules';
-  // Import Swiper styles
   import 'swiper/css';
   import 'swiper/css/pagination';
-  // import required modules
   export default {
     components:{
       Swiper,
@@ -15,7 +14,16 @@
   data(){
       return{
         modules: [Pagination],
+        store,
       }
+    },
+
+    props:{
+      title: String,
+      text: String,
+      cardImg: String,
+      name: String,
+      position: String,
     }
   }
 </script>
@@ -40,31 +48,25 @@
         :modules="modules"
         class="mySwiper"
       >
-    <swiper-slide>
+    <swiper-slide v-for="item in store.carouselEl" :key="item">
       <div class="inner-slider mt-1 d-flex flex-column align-items-start">
-        <p class="title text-start">High level of efficiency and scientific teaching methods</p>
-        <p class="text text-start">I am free to learn at my own pace, follow my own schedule and choose the subject I want to learn from the syllabus. Great study portal for people like me.</p>
+        <p class="title text-start">{{ item.title }}</p>
+        <p class="text text-start">{{ item.text }}</p>
         <div class="card mt-3 border-0 d-flex justify-content-start" style="max-width: 540px;">
           <div class="card-wrapper row g-0">
             <div class="col-md-4 square">
-              <img src="/img/testimonial-avata-03.jpg" class="rounded-circle" alt="...">
+              <img :src="item.cardImg" class="rounded-circle" alt="...">
             </div>
             <div class="col-md-8">
               <div class="card-body text-start d-flex flex-column">
-                <h6 class="card-title text-uppercase">Florence Themes</h6>
-                <p class="card-text"><small class="text-body-secondary">/Multimedia admin</small></p>
+                <h6 class="card-title text-uppercase">{{ item.name }}</h6>
+                <p class="card-text"><small class="text-body-secondary">{{ item.position }}</small></p>
               </div>
             </div>
           </div>
         </div>
-      </div>
-
+      </div>  
     </swiper-slide>
-    <swiper-slide>Slide 2</swiper-slide>
-    <swiper-slide>Slide 3</swiper-slide>
-    <swiper-slide>Slide 4</swiper-slide>
-    <swiper-slide>Slide 5</swiper-slide>
-    <swiper-slide>Slide 6</swiper-slide>
   </swiper>
     </div>
   </div>

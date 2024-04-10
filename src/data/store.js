@@ -77,5 +77,39 @@ export const store = reactive({
       num: '1090',
       subTitle: 'Enrolled Learners'
     },
+  ],
+
+  carouselEl: [
+    {
+      title: 'It\'s a choice of quality for people with special needs',
+      text: 'I\'m a very stric person so I require everything to be organized and neat. Then, I\'ll be able to make things right and shine. Maxcoach guys just got me. ,',
+      cardImg: '/img/testimonial-avata-03.jpg',
+      name: 'Florence Themes',
+      position: '/ Multimedia Admin',
+    },
+
+    {
+      title: 'High level of efficiency and scientific teaching methods',
+      text: 'I am free to learn at my own pace, follow my own schedule and choose the subject I want to learn from the syllabus. Great study portal for people like me.',
+      cardImg: '/img/testimonial-avata-02.jpg',
+      name: 'Mina Hollace',
+      position: '/ Freelancer',
+    },
+
+    {
+      title: 'Professional team of specialist and pasisonate mentors at reach',
+      text: 'I need to get a certification for English proficiency and MaxCoach is my best coiche. Their tutors are smart and professional when dealing with students.',
+      cardImg: '/img/testimonial-avata-04.jpg',
+      name: 'Madley Pondor',
+      position: 'IT Specialist',
+    },
+
+    {
+      title: 'High level of efficiency and scientific teaching methods',
+      text: 'I need to get a certification for English proficiency and MaxCoach is my best coiche. Their tutors are smart and professional when dealing with students.',
+      cardImg: '/img/testimonial-avata-01.jpg',
+      name: 'Ben Wallace',
+      position: '/ IT Head Specialist',
+    },
   ]
 })
