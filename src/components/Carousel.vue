@@ -1,10 +1,11 @@
 
 <script>
-  import { store } from '../data/store';
-  import { Swiper, SwiperSlide } from 'swiper/vue';
-  import { Pagination } from 'swiper/modules';
-  import 'swiper/css';
-  import 'swiper/css/pagination';
+  import { store } from '../data/store'; // Importa lo store dei dati
+  import { Swiper, SwiperSlide } from 'swiper/vue'; // Importa il componente Swiper e SwiperSlide da Swiper Vue
+  import { Pagination } from 'swiper/modules'; // Importa il modulo Pagination da Swiper
+  import 'swiper/css'; // Importa gli stili di base di Swiper
+  import 'swiper/css/pagination'; // Importa gli stili della paginazione di Swiper
+
   export default {
     components:{
       Swiper,
@@ -13,17 +14,18 @@
 
   data(){
       return{
-        modules: [Pagination],
-        store,
+        modules: [Pagination], // Array di moduli da utilizzare con Swiper
+        store, // Assegna lo store dei dati alla variabile store
       }
     },
 
+     // Definizione delle proprietà (props) del componente
     props:{
-      title: String,
-      text: String,
-      cardImg: String,
-      name: String,
-      position: String,
+      title: String, // Titolo del componente
+      text: String, // Testo del componente
+      cardImg: String, // Immagine della carta del componente
+      name: String, // Nome del componente
+      position: String, // Posizione del componente
     }
   }
 </script>
@@ -31,13 +33,15 @@
 <template>
 
   <div class="carousel text-center">
-    
+    <!-- Titolo principale -->
     <div class="main-title">
       <h6 class="sub-title text-uppercase">Great words about maxcoach</h6>
       <h2 class="title">Our <span>top learners'</span> verbatim</h2>
     </div>
 
+    <!-- Contenitore per il componente Swiper -->
     <div class="swiper-wrapper">
+      <!-- Inizializzazione del componente Swiper -->
       <swiper
         :slidesPerView="3"
         :spaceBetween="30"
@@ -48,16 +52,20 @@
         :modules="modules"
         class="mySwiper"
       >
+      <!-- Loop per la creazione delle diapositive Swiper -->
         <swiper-slide v-for="item in store.carouselEl" :key="item">
           <div class="inner-slider mt-1 d-flex flex-column align-items-start bg-white py-5 rounded-3">
             <p class="title text-start">{{ item.title }}</p>
             <p class="text text-start">{{ item.text }}</p>
+            <!-- Contenitore della carta -->
             <div class="card mt-3 border-0 d-flex justify-content-start" style="max-width: 540px;">
               <div class="card-wrapper row g-0">
+                <!-- Immagine della carta -->
                 <div class="col-md-4 square">
                   <img :src="item.cardImg" class="rounded-circle" alt="...">
                 </div>
                 <div class="col-md-8">
+                  <!-- Contenuto della carta -->
                   <div class="card-body text-start d-flex flex-column">
                     <h6 class="card-title text-uppercase">{{ item.name }}</h6>
                     <p class="card-text"><small class="text-body-secondary">{{ item.position }}</small></p>
@@ -70,6 +78,7 @@
       </swiper>
     </div>
 
+    <!-- Sezione per la certificazione -->
     <div class="certification">
         <h4>Start today for getting <span>Online Certification</span></h4>
         <h2>You can be your own guiding star with out help!</h2>
@@ -83,6 +92,8 @@
 @use '/src/assets/scss/main.scss' as *;
 
 .carousel{
+  // Stili per il carousel
+  // Immagini di background
   padding: 20px 0;
   background-color: $bg-gray;
   background-image: 
@@ -93,6 +104,8 @@
   background-position: 80% 95%, 20% 87%;
   position: relative;
 }
+
+ /* Stili per il titolo principale */
 .main-title{
   margin: 50px 0 80px 0;
   .sub-title{
@@ -112,10 +125,12 @@
   }
 }
 
+// Altezza del contenitore dello swiper
 .swiper-wrapper{
   height: 50vh;
 }
 
+// Forma dell'immagine
 .square{
   img{
     width: 70px;
@@ -128,6 +143,7 @@
   align-items: center;
 }
 
+/* Stili per il contenuto delle diapositive */
 .inner-slider{
   padding: 0 100px;
   .title{
@@ -143,6 +159,7 @@
   }
 }
 
+ /* Stili per il corpo della carta */
 .card-body{
   width: 150%;
   .card-title{
@@ -151,7 +168,7 @@
   }
 }
 
-
+/* Stili per la sezione di certificazione */
 .certification{
   position: relative;
   height: 22vh;
@@ -171,6 +188,7 @@
     font-weight: 700;
   }
 
+  /* Stili per il pulsante di certificazione */
   .btn{
     background-color: $text-green;
     color: white;
@@ -183,17 +201,6 @@
       color: white;
       transform: scale(1.1);
     }
-  }
-
-  .circle{
-    position: absolute;
-    z-index: 99;
-    top: 120px;
-    left: 80px;
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    border: 6px solid rgba(47, 173, 150, 0.5);
   }
 }
 

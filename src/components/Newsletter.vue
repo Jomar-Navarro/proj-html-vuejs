@@ -23,6 +23,7 @@
 @use '/src/assets/scss/main.scss' as *;
 
 #news{
+  // Immagine in background
   background-image:
   url('/img/maxcoach-shape-02.png'),
   url('/img/maxcoach-shape-09.png');

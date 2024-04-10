@@ -2,6 +2,7 @@ import { reactive } from 'vue';
 
 export const store = reactive({
   mainTitle: 'MaxCoach',
+  // Array per le card
   cardContent: [
           {
             cardImage: '/img/course-02-480x298.jpg',
@@ -51,6 +52,7 @@ export const store = reactive({
           },
         ],
 
+// Array per il Dropdown Menu
 dropDownMenu: [
   {
     title: 'Home',
@@ -124,6 +126,7 @@ dropDownMenu: [
   }
 ],
 
+  // Worldwild card array
   worldwide: [
     {
       title: 'Successfully trained',
@@ -150,6 +153,7 @@ dropDownMenu: [
     },
   ],
 
+  // Carousel array
   carouselEl: [
     {
       title: 'It\'s a choice of quality for people with special needs',
