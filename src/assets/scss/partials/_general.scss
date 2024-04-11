@@ -21,3 +21,14 @@ body{
 .swiper-slide-next {
   opacity: .3 !important;
 }
+
+.dropdown-toggle::after {
+  font-family: FontAwesome;
+  content: "\f078" !important;
+  border-right: 0;
+  border-bottom: 0;
+  border-top: 0 !important;
+  vertical-align: 0;
+  margin-left: 0;
+  font-size: .52em;
+}
